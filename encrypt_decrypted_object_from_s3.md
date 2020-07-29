@@ -1,6 +1,9 @@
 # Encrypt - decrypted object from s3 bucket using python
 
 
+AWS allows you to assume roles in other AWS accounts. Its a nice feature that allows you to log into 1 account, assume a role in another account, and issue API commands as if you had signed into the 2nd account. You can have all users sign into 1 central account, then assume roles into other accounts based on a job role. Using the AWS gui, this is a few mouse clicks, but here I’ll show you how to assume a role using BOTO3.
+
+
 I have access keys for my base account and assume-role for dev,qa or prod to access the bucket data
 I assume you have appropritate access to decrypt the data and not focusing on equired access 
 
